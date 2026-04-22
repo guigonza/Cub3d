@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   cub3d.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jomarti3 <jomarti3@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: rdrevar <rdrevar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/14 16:36:37 by jomarti3          #+#    #+#             */
-/*   Updated: 2026/04/06 17:45:24 by jomarti3         ###   ########.fr       */
+/*   Updated: 2026/04/21 19:24:52 by rdrevar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,14 @@
 # include <mlx.h>
 # include <math.h>
 # include <stdlib.h>
-# include "libft.h"
 # include <unistd.h>
 # include <stdio.h>
 # include <fcntl.h>
+
+# include "libft.h"
+# include "ft_printf.h"
+# include "get_next_line.h"
+# include "gnl.h"
 
 // WINDOW
 # define WIDTH 2000
