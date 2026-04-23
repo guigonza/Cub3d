@@ -14,11 +14,11 @@
 
 NAME = gnl.a
 CC      = cc
-CFLAGS  = -Wall -Wextra -Werror -I includes
+CFLAGS  = -Wall -Wextra -Werror -I includes -I ../0.0_libft/includes
 
 AR = ar rcs
 
-GNL_FILES = get_next_line get_next_line_utils
+GNL_FILES = get_next_line
 OBJS      = $(GNL_FILES:=.o)
 
 all: $(NAME)

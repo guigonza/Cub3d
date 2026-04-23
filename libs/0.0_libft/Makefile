@@ -41,6 +41,7 @@ SRC		=		src/char_op/ft_isalpha.c \
 				src/stdlib/mem_op/ft_memchr.c \
 				src/stdlib/mem_op/ft_memcmp.c \
 				src/stdlib/mem_op/ft_calloc.c \
+				src/stdlib/mem_op/ft_realloc.c \
 				src/stdlib/ft_atoi.c \
 				src/stdlib/ft_atol.c \
 				src/stdlib/ft_itoa.c \
