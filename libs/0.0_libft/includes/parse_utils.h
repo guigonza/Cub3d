@@ -6,7 +6,7 @@
 /*   By: rdrevar <rdrevar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/17 18:18:24 by rdrevar           #+#    #+#             */
-/*   Updated: 2026/04/21 19:37:49 by rdrevar          ###   ########.fr       */
+/*   Updated: 2026/04/23 17:29:03 by rdrevar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 # include <stdlib.h>
 # include <stdarg.h>
 # include <stdint.h>
-
 
 char		**ft_split_quote(char const *s, char c);
 char		*ft_strndup_trim_quote(const char *start, size_t len);

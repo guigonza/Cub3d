@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rdrevar <rdrevar@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/04/23 17:34:41 by rdrevar           #+#    #+#             */
+/*   Updated: 2026/04/23 17:35:16 by rdrevar          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "get_next_line.h"
 #include "libft.h"
 
@@ -46,7 +58,6 @@ char	*ft_extract_line(char *stash)
 	return (line);
 }
 
-
 char	*ft_expand_stash(char *stash, char *buffer, ssize_t bytes_read)
 {
 	ssize_t	stash_len;
@@ -93,7 +104,6 @@ char	*ft_read_to_stash(int fd, char *stash)
 	free(buffer);
 	return (stash);
 }
-
 
 char	*get_next_line(int fd)
 {

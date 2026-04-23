@@ -6,18 +6,12 @@
 /*   By: rdrevar <rdrevar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/21 19:31:45 by rdrevar           #+#    #+#             */
-/*   Updated: 2026/04/21 19:39:16 by rdrevar          ###   ########.fr       */
+/*   Updated: 2026/04/23 17:32:31 by rdrevar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include "ft_printf.h"
-//#include "ft_printf_utils.h"
-
-# include <stdarg.h>
-# include <stdint.h>
-# include <stdlib.h>
-
-# include "libft.h"
+#include <stdint.h>
+#include "libft.h"
 
 int	is_valid_base(const char *base)
 {
