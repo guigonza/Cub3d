@@ -23,7 +23,6 @@
 # include "libft.h"
 # include "ft_printf.h"
 # include "get_next_line.h"
-# include "gnl.h"
 
 // WINDOW
 # define WIDTH 2000

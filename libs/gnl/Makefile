@@ -18,7 +18,7 @@ CFLAGS  = -Wall -Wextra -Werror -I includes
 
 AR = ar rcs
 
-GNL_FILES = get_next_line_bonus get_next_line_utils_bonus
+GNL_FILES = get_next_line get_next_line_utils
 OBJS      = $(GNL_FILES:=.o)
 
 all: $(NAME)
