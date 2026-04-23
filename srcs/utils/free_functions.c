@@ -82,7 +82,7 @@ void	free_strarr(char **res, int i)
 
 void	ft_free_config(t_config *config)
 {
-	ft_printf("Clean up config.\n");
+	printf("Clean up config.\n");
 	if (!config)
 		return ;
 	if (config->no_texture)

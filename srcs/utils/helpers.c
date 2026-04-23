@@ -14,7 +14,7 @@
 
 int	exit_program(t_game *g)
 {
-	ft_printf("Clean up game.\n");
+	printf("Clean up game.\n");
 	free_game(g);
 	exit(0);
 	return (0);

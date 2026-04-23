@@ -32,7 +32,6 @@ GNL			= $(GNL_DIR)/gnl.a
 MLX			= $(MLX_DIR)/libmlx_Linux.a
 
 LIBS =	$(GNL) \
-		$(PRINTF) \
 		$(LIBFT) \
 		
 
@@ -70,9 +69,6 @@ srcs/%.o: srcs/%.c
 $(LIBFT):
 	@$(MAKE) -C $(LIBFT_DIR)
 
-$(PRINTF):
-	@$(MAKE) -C $(PRINTF_DIR)
-
 $(GNL):
 	@$(MAKE) -C $(GNL_DIR)
 
@@ -81,7 +77,6 @@ $(MLX):
 	
 clean:
 	@$(MAKE) -C $(LIBFT_DIR) clean
-	@$(MAKE) -C $(PRINTF_DIR) clean
 	@$(MAKE) -C $(GNL_DIR) clean
 	@$(MAKE) -C $(MLX_DIR) clean
 	@rm -f $(OBJECTS)
@@ -89,7 +84,6 @@ clean:
 
 fclean: clean
 	@$(MAKE) -C $(LIBFT_DIR) fclean
-	@$(MAKE) -C $(PRINTF_DIR) fclean
 	@$(MAKE) -C $(GNL_DIR) fclean
 	@rm -f $(MLX_DIR)/Makefile.gen $(MLX_DIR)/test/Makefile.gen
 	@rm -f $(NAME)
