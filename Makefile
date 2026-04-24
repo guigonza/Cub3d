@@ -3,14 +3,14 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: rdrevar <rdrevar@student.42.fr>            +#+  +:+       +#+         #
+#    By: guigonza <guigonza@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/21 18:02:20 by rdrevar           #+#    #+#              #
-#    Updated: 2026/04/21 19:30:04 by rdrevar          ###   ########.fr        #
+#    Updated: 2026/04/24 09:53:08 by guigonza         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		= cub3d
+NAME		= cub3D
 
 MAKEFLAGS += --no-print-directory
 
