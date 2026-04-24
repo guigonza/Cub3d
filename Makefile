@@ -6,7 +6,7 @@
 #    By: guigonza <guigonza@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/21 18:02:20 by rdrevar           #+#    #+#              #
-#    Updated: 2026/04/24 09:53:08 by guigonza         ###   ########.fr        #
+#    Updated: 2026/04/24 11:22:39 by guigonza         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,18 +16,16 @@ MAKEFLAGS += --no-print-directory
 
 CC			= cc
 
-CFLAGS		= -Wall -Wextra -Werror
+CFLAGS		= -Wall -Wextra -Werror 
 
-CPPFLAGS	= -I./includes -I./$(LIBFT_DIR)/includes -I./$(PRINTF_DIR)/includes -I./$(GNL_DIR)/includes -I./$(MLX_DIR)
+CPPFLAGS	= -I./includes -I./$(LIBFT_DIR)/includes -I./$(GNL_DIR)/includes -I./$(MLX_DIR)
 
 LIBFT_DIR	= libs/0.0_libft
-PRINTF_DIR	= libs/ft_printf
 GNL_DIR		= libs/gnl
 MLX_DIR		= libs/mlx_linux
 
 
 LIBFT		= $(LIBFT_DIR)/libft.a
-PRINTF		= $(PRINTF_DIR)/ft_printf.a
 GNL			= $(GNL_DIR)/gnl.a
 MLX			= $(MLX_DIR)/libmlx_Linux.a
 
@@ -91,27 +89,9 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re bonus
 
-###############################################################################
-## Basic code metrics.
-###############################################################################
-# stats:
-# 	@lines=$$( \
-# 		{ \
-# 			find srcs includes -type f \( -name '*.c' -o -name '*.h' -o -name '*.sh' \) -exec cat {} +; \
-# 		} | grep -Ev '^[[:space:]]*(#|//|$$)' | wc -l \
-# 	); \
-# 	echo ""; \
-# 	echo "  - Total of lines: \033[0;32m$$lines\033[0m"; \
-# 	files=$$( \
-# 		find srcs includes -type f \( -name '*.c' -o -name '*.h' -o -name '*.sh' \) | wc -l \
-# 	); \
-# 	echo "  - Total of files: \033[0;32m$$files\033[0m"; \
-# 	echo ""
+test: all
+	@./tests/test.sh
 
-# test: all
-# 	@./tests/test.sh
 
-# debug: all
-# 	@./tests/debug.sh
+.PHONY: all clean fclean re bonus test

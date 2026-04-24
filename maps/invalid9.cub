@@ -1,5 +1,5 @@
 NO ./textures/wall_north.xpm
-BADLINE something
+./BADLINE something
 SO ./textures/wall_south.xpm
 WE ./textures/wall_west.xpm
 EA ./textures/wall_east.xpm
