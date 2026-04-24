@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   load_game.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jomarti3 <jomarti3@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: guigonza <guigonza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/15 14:15:26 by jomarti3          #+#    #+#             */
-/*   Updated: 2026/04/09 00:33:13 by jomarti3         ###   ########.fr       */
+/*   Updated: 2026/04/23 18:56:54 by guigonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ static int	load_textures(t_game *g, t_config *config)
 		|| !load_tex(g, &g->wall_south, config->so_texture)
 		|| !load_tex(g, &g->wall_east, config->ea_texture)
 		|| !load_tex(g, &g->wall_west, config->we_texture)
-		|| !load_tex(g, &g->hand_sheet, "textures/arms.xpm")
+		|| !load_tex(g, &g->hand_sheet, "textures/arms_color.xpm")
 		|| !load_tex(g, &g->door_closed, "textures/door_closed.xpm")
 		|| !load_tex(g, &g->door_half, "textures/door_half.xpm")
 		|| !load_tex(g, &g->door_open, "textures/door_open.xpm"))
