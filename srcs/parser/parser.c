@@ -6,7 +6,7 @@
 /*   By: guigonza <guigonza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/29 19:50:32 by guigonza          #+#    #+#             */
-/*   Updated: 2026/04/24 11:12:58 by guigonza         ###   ########.fr       */
+/*   Updated: 2026/04/24 14:03:14 by guigonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,7 @@ static int	ft_parse_line(t_config *config, char *line)
 	if (line[i] == '\n' || line[i] == '\0')
 		return (0);
 	result = ft_compare_symbols(config, line, i);
-	if (result == -1)
+	if (result != -1)
 		return (result);
 	if (ft_check_all_flags(config) == 1)
 		return (ft_add_map_line(config, line));
